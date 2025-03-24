@@ -21,7 +21,8 @@ A dynamic and interactive Quiz App built using **HTML, CSS, and JavaScript**, in
 
 ## 📸 Screenshots
 
-![Quiz App Screenshot](https://via.placeholder.com/800x400.png?text=Quiz+App+Preview)
+![Quiz App Screenshot](https://github.com/user-attachments/assets/ffc111c4-832b-4827-8d5e-dfb24509e394)
+
 
 ---
 
