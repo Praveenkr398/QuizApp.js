@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 244, 244);
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.49), rgba(0, 0, 0, 0));
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    outline: 1px solid rgb(206, 206, 206);
+    outline-offset: 3px;
+    box-shadow: 2px 0 100px rgb(187, 187, 187), -2px -2px 5px rgb(227, 226, 226);
+}
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+.heading span{
+    color: blue;
+    text-shadow: 2px 2px white;
+}
+label{
+    display: block;
+    font-size: 15px;
+    color: rgb(33, 23, 23);
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgb(136, 0, 255), rgba(0, 0, 0, 0.7));
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    background: linear-gradient(to bottom, rgb(0, 94, 255), rgba(77, 77, 77, 0.7));
+}
+
+.btn:disabled{
+    cursor: not-allowed;
+    background-color: gray;
+}
+.submit{
+    background-color: green;
+}
+
+.hide{
+    display: none;
+}
+
+.timer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timer .progress{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.timer .progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(to right, orange, blue);
+    transition: background 1s liner;
+}
+.timer .progress .progress-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.question-wrapper .number{
+    color: rgb(144, 144, 144);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.question-wrapper .number .current{
+    color: rgb(0, 38, 253);
+    font-size: 20px;
+}
+
+.question-wrapper .question{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.answer-wrapper .answer{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    color: rgb(30, 30, 30);
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+cursor: pointer;
+transition: .3s linear;
+padding-left: 20px;
+}
+
+.answer .checkbox{
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 3px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+  
+}
+.answer .checkbox .icon{opacity: 0;}
+.answer:hover:not(.checked) .checkbox ,
+.answer.selected .checkbox {
+    background-color: rgb(0, 255, 38);
+    border: rgb(60, 255, 0)    ;
+}
+.answer.answer.selected .checkbox .icon{
+opacity: 1;
+}
+
+.answer.correct{border-color: rgb(5, 238, 5);  background-color:rgb(165, 231, 165) ; color: black;}
+.answer.wrong{border-color: red;color: black; background-color:rgb(245, 167, 167) ;}
+
+.question-wrapper,
+.answer-wrapper{
+    margin-bottom: 40px;
+}
+
+.btn.next{
+    display: none;
+}
+
+.end-screen .score{
+    color: white;
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+    text-shadow: 4px 4px 20px rgb(247, 165, 165);
+}
+.end-screen .score-text{
+    color: rgb(66, 66, 70);
+    font-size: 26px;
+    margin-bottom: 200px;
+    text-shadow: 4px 4px 20px rgb(223, 221, 221);
+}
+@media (max-width:468) {
+    .container{
+        min-height: 100vh;
+        max-width: 100%;
+        border-radius: 0;
+    }
+}

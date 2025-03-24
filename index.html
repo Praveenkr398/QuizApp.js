@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App.js</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading">My <span>Q</span>uiz App</h1>
+
+        <div class="start-screen">
+            <div class="settings">
+                <label for="num-question">Number of Questions</label>
+                <select name="" id="numQuestion">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+
+                <label for="category">select category</label>
+                <select name="" id="category">
+                    <option value="9">General Knowledge</option>
+                    <option value="10">Books</option>
+                    <option value="11">Film</option>
+                    <option value="12">Music</option>
+                    <option value="13">Musicals & Theatres</option>
+                    <option value="14">Television</option>
+                    <option value="15">Video Games</option>
+                    <option value="16">Board Games</option>
+                    <option value="17">Science & Nature</option>
+                    <option value="18">Science: Computers</option>
+                    <option value="19">Science: Mathematics</option>
+                    <option value="20">Mythology</option>
+                    <option value="21">Sports</option>
+                    <option value="22">Geography</option>
+                    <option value="23">History</option>
+                    <option value="24">Politics</option>
+                    <option value="25">Art</option>
+                    <option value="26">Celebrities</option>
+                    <option value="27">Animals</option>
+                    <option value="28">Vehicles</option>
+                    <option value="29">Comics</option>
+                    <option value="30">Science: Gadgets</option>
+                    <option value="31">Japanese Anime & Manga</option>
+                    <option value="32">Cartoon & Animations</option>
+                </select>
+
+                <label for="difficulty">select Difficulty</label>
+                <select name="" id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                </select>
+                <label for="time">select time per question</label>
+                <select name="" id="time">
+                    <option value="10">10 seconds</option>
+                    <option value="20">20 seconds</option>
+                    <option value="30">30 seconds</option>
+                    <option value="40">40 seconds</option>
+                    <option value="50">50 seconds</option>
+                    <option value="60">60 seconds</option>
+                </select>
+            </div>
+            <button class="btn start">Start Quiz</button>
+        </div>
+
+        <div class="quiz hide">
+            <div class="timer">
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text">0</span>
+                </div>
+            </div>
+
+            <div class="question-wrapper">
+                <div class="number">
+                    Question :
+                    <span class="current">1</span>
+                    <span class="total">/10</span>
+                </div>
+                <div class="question">This lorem is first question</div>
+            </div>
+
+            <div class="answer-wrapper">
+                <div class="answer selected">
+                    <span class="text">answer</span>
+                    <span class="checkbox"><span class="icon">✔️</span></span>
+                </div>
+                <div class="answer correct">
+                    <span class="text">answer</span>
+                    <span class="checkbox"><span class="icon">✔️</span></span>
+                </div>
+                <div class="answer wrong">
+                    <span class="text">answer</span>
+                    <span class="checkbox"><span class="icon">✔️</span></span>
+                </div>
+                <div class="answer ">
+                    <span class="text">answer</span>
+                    <span class="checkbox"><span class="icon">✔️</span></span>
+                </div>
+            </div>
+            <button class="btn submit">Submit</button>
+            <button class="btn next">Next</button>
+        </div>
+
+        <div class="end-screen hide">
+            <div class="score">
+                <span class="score-text">Your Score:</span>
+                <div>
+                    <span class="final-score">0</span>
+                    <span class="total-score">/10</span>
+                </div>
+                <button class="btn restart">Restart Quiz</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+
+</html>
