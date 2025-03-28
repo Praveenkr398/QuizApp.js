@@ -5,8 +5,8 @@
 ![Quiz App Screenshot](https://github.com/user-attachments/assets/ffc111c4-832b-4827-8d5e-dfb24509e394)
 
 
-🔗 **Live Demo:** [Try it here](https://praveenkr398.github.io/QuizApp.js/)  
-💻 **GitHub Repo:** [Explore the Code](https://github.com/Praveenkr398/QuizApp.js)  
+## 🔗 **Live Demo:** [Try it here](https://praveenkr398.github.io/QuizApp.js/)  
+## 💻 **GitHub Repo:** [Explore the Code](https://github.com/Praveenkr398/QuizApp.js)  
 
 ## 🚀 About the Project  
 This **Quiz App** is a dynamic and interactive quiz platform that allows users to test their knowledge across multiple categories. With **customizable settings**, real-time question fetching from the **OpenTDB API**, and an engaging UI, this app offers a seamless and fun quiz experience.  
