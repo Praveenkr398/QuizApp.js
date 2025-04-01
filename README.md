@@ -4,6 +4,8 @@
 
 ![Quiz App Screenshot](https://github.com/user-attachments/assets/ffc111c4-832b-4827-8d5e-dfb24509e394)
 
+Category:- "Mini Project, HTML, CSS, JavaScript, Api, Top"
+
 
 ## 🔗 **Live Demo:** [Try it here](https://praveenkr398.github.io/QuizApp.js/)  
 ## 💻 **GitHub Repo:** [Explore the Code](https://github.com/Praveenkr398/QuizApp.js)  
